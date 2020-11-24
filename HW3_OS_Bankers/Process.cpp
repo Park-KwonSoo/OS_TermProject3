@@ -3,6 +3,12 @@
 Process::Process()
 {
 	this->n = 0;
+	this->processName = "";
+}
+
+Process::Process(string processName)
+{
+	this->processName = processName;
 }
 
 void Process::setN(int n)
@@ -10,16 +16,14 @@ void Process::setN(int n)
 	this->n = n;
 }
 
-void Process::setMax(float* resource)
+void Process::setMax(Resource Max)
 {
-	for (int i = 0; i < this->n; i++)
-		this->Max.addResource(resource[i]);
+	this->Max = Max;
 }
 
-void Process::setAllocation(float* resource)
+void Process::setAllocation(Resource Allocation)
 {
-	for (int i = 0; i < this->n; i++)
-		this->Allocation.addResource(resource[i]);
+	this->Allocation = Allocation;
 }
 
 Resource Process::getMax()
@@ -30,4 +34,9 @@ Resource Process::getMax()
 Resource Process::getAllocation()
 {
 	return this->Allocation;
+}
+
+void Process::printProcess()
+{
+	cout << this->processName << ", ";
 }

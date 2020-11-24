@@ -9,7 +9,7 @@ Resource::Resource()
 
 Resource::Resource(int n)
 {
-	this->resource = new float(n);
+	this->resource = new float[n];
 	this->count = 0;
 	this->n = n
 }
@@ -17,7 +17,7 @@ Resource::Resource(int n)
 void Resource::setN(int n)
 {
 	delete this->resource;
-	this->resource = new float(n);
+	this->resource = new float[n];
 	this->n = n;
 }
 
