@@ -10,12 +10,17 @@ private :
 	float* resource;
 	//현재 자원의 개수를 count한다.
 	int count;
+	//현재 동적할당 된 자원의 개수를 저장한다.
+	int n;
 public :
 	//자원 기본 생성자
 	Resource();
 
 	//자원 생성자 : Parameter : n = n의 크기로 동적할당 한다
 	Resource(int n);
+
+	//해당 자원의 개수를 동적할당한다.
+	void setList(int n);
 
 	//자원에 resource를 add한다
 	void addResource(float resource);
