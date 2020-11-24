@@ -11,7 +11,11 @@ Resource::Resource(int n)
 {
 	this->resource = new float[n];
 	this->count = 0;
-	this->n = n
+	this->n = n;
+}
+
+Resource::~Resource()
+{
 }
 
 void Resource::setN(int n)
@@ -23,7 +27,7 @@ void Resource::setN(int n)
 
 void Resource::addResource(float resource)
 {
-	if (this->count < n) {
+	if (this->count < this->n) {
 		this->resource[this->count] = resource;
 		this->count++;
 	}

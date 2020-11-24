@@ -19,10 +19,12 @@ public :
 	//자원 생성자 : Parameter : n = n의 크기로 동적할당 한다
 	Resource(int n);
 
+	//소멸자
+	~Resource();
+
 	//해당 자원의 개수를 동적할당한다.
 	void setN(int n);
 
-	//자원에 resource를 add한다
 	void addResource(float resource);
 
 	//동적할당 된 개수를 리턴한다.

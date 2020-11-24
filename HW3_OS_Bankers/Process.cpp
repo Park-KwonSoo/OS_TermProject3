@@ -38,5 +38,5 @@ Resource Process::getAllocation()
 
 void Process::printProcess()
 {
-	cout << this->processName << ", ";
+	cout << this->processName;
 }
