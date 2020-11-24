@@ -20,7 +20,7 @@ public :
 	Resource(int n);
 
 	//해당 자원의 개수를 동적할당한다.
-	void setList(int n);
+	void setN(int n);
 
 	//자원에 resource를 add한다
 	void addResource(float resource);

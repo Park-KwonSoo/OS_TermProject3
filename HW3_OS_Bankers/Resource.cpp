@@ -14,7 +14,7 @@ Resource::Resource(int n)
 	this->n = n
 }
 
-void Resource::setList(int n)
+void Resource::setN(int n)
 {
 	delete this->resource;
 	this->resource = new float(n);
